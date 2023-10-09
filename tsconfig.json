@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib":["es5", "es6", "dom", "dom.iterable"],
+    "target": "ES2019",
+    "module": "commonjs",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "preserveSymlinks": true,
+    "paths": {
+      "@utils": ["utils"],
+      "@queries": ["utils/queries"],
+      "@logger": ["utils/logger"],
+      "@data": ["../movies.json"],
+      "@platformIdconfig": ["../platformId.config.json"],
+      "@shared-steps": ["utils/shared-steps"]
+    }
+  },
+  "include": ["src", ".eslintrc.js"]
+}
