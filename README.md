@@ -6,6 +6,20 @@ E2E Automated tests to verify the features of weaviate instance. The example use
 
 The framework uses JEST and JEST BDD to draft the scenarios and to automate them.
 
+To install all the dependency
+
+```
+yarn install
+
+```
+
+To build the test , run 
+
+```
+yarn build
+
+```
+
 To run the tests locally:
 
 ```
