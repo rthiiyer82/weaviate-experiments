@@ -1,6 +1,6 @@
 # Goal:
 
-E2E Automated tests to verify the features of weaviate instance. The example used for testing is the movies-recommedation example.
+E2E Automated Functional tests to verify the features of weaviate instance using Typescript. These tests can be executed as part of regression testing of weaviate instance.
 
 ## Usage
 
@@ -35,6 +35,8 @@ The framework uses the `env.json` file where weavaite cluster's host url, weavia
       "X-OpenAI-Api-Key": ""
     }
 `
+
+The tests can also be executed on multiple node cluster environment. Just provide the node details in the `env.json` file.
 
 ## Execution Report
 

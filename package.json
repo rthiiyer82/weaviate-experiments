@@ -6,7 +6,7 @@
   "type": "commonjs",
   "license": "ISC",
   "scripts": {
-    "test": "yarn test steps.ts",
+    "test": "jest --maxWorkers=30 --testTimeout=3000000",
     "build": "yarn shx mkdir -p dist && tsc"
   },
   "author": "",
@@ -29,7 +29,8 @@
     "ts-jest": "^29.1.1",
     "tslib": "^2.0.1",
     "typescript": "^5.1.5",
-    "weaviate-ts-client": "^1.5.0"
+    "wait-for-expect": "^3.0.2",
+    "weaviate-ts-client": "^2.0.0"
   },
   "overrides": {
     "isomorphic-fetch": {

@@ -3,7 +3,7 @@
     "lib":["es5", "es6", "dom", "dom.iterable"],
     "target": "ES2019",
     "module": "commonjs",
-    "baseUrl": "./src",
+    "baseUrl": "./E2ETests",
     "outDir": "./dist",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -14,13 +14,12 @@
     "importHelpers": true,
     "preserveSymlinks": true,
     "paths": {
-      "@utils": ["utils"],
-      "@queries": ["utils/queries"],
-      "@logger": ["utils/logger"],
+      "@utils": ["../E2ETests/util"],
+      "@queries": ["E2ETests/query"],
       "@data": ["../movies.json"],
-      "@platformIdconfig": ["../platformId.config.json"],
-      "@shared-steps": ["utils/shared-steps"]
+      "@shared-steps": ["./E2ETests/util/shared-steps"],
+      "@interface": ["../E2ETests/interface"]
     }
   },
-  "include": ["src", ".eslintrc.js"]
+  "include": ["./E2ETests", ".eslintrc.js"]
 }
